@@ -9,66 +9,66 @@ updates:
 
   # Maintain dependencies for Go (api-gateway)
   - package-ecosystem: "gomod"
-    directory: "/risk-platform/services/api-gateway"
+    directory: "/api-gateway"
     schedule:
       interval: "weekly"
       day: "saturday"
 
   # Maintain dependencies for Go (runner-service)
   - package-ecosystem: "gomod"
-    directory: "/risk-platform/services/runner-service"
+    directory: "/runner-service"
     schedule:
       interval: "weekly"
       day: "saturday"
 
   # Maintain dependencies for Go (shared)
   - package-ecosystem: "gomod"
-    directory: "/risk-platform/services/shared"
+    directory: "/shared"
     schedule:
       interval: "weekly"
       day: "saturday"
 
   # Maintain dependencies for npm (ui)
   - package-ecosystem: "npm"
-    directory: "/risk-platform/ui"
+    directory: "/ui"
     schedule:
       interval: "weekly"
       day: "saturday"
 
   # Maintain dependencies for Python (ai-service)
   - package-ecosystem: "pip"
-    directory: "/risk-platform/services/ai-service"
+    directory: "/ai-service"
     schedule:
       interval: "weekly"
       day: "saturday"
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
-    directory: "/risk-platform"
+    directory: "/"
     schedule:
       interval: "weekly"
       day: "saturday"
 
   - package-ecosystem: "docker"
-    directory: "/risk-platform/services/api-gateway"
+    directory: "/api-gateway"
     schedule:
       interval: "weekly"
       day: "saturday"
 
   - package-ecosystem: "docker"
-    directory: "/risk-platform/services/runner-service"
+    directory: "/runner-service"
     schedule:
       interval: "weekly"
       day: "saturday"
 
   - package-ecosystem: "docker"
-    directory: "/risk-platform/services/ai-service"
+    directory: "/ai-service"
     schedule:
       interval: "weekly"
       day: "saturday"
 
   - package-ecosystem: "docker"
-    directory: "/risk-platform/ui"
+    directory: "/ui"
     schedule:
       interval: "weekly"
       day: "saturday"
