@@ -1,7 +1,7 @@
 # Dockerfile for UI (Next.js)
 
 # Builder stage
-FROM node:25-alpine AS builder
+FROM node:26-alpine AS builder
 
 ARG API_GATEWAY_URL
 ENV API_GATEWAY_URL=${API_GATEWAY_URL}
@@ -13,7 +13,7 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM node:25-alpine
+FROM node:26-alpine
 WORKDIR /app
 
 COPY --from=builder /app/public ./public
